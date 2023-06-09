@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "./customize_axios"; // không cần thiết phải import instance (axios chính là instance)
 const fetchAllUser = () => {
-    return axios.get("https://6482dff2f2e76ae1b95ba099.mockapi.io/address_info");
-}
+  return axios.get("/address_info");
+};
 
 export { fetchAllUser };
