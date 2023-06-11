@@ -7,4 +7,11 @@ const postCreateUser = (first_name, last_name, email) => {
   return axios.post("/address_info", { first_name, last_name, email });
 };
 
-export { fetchAllUser, postCreateUser };
+const editUser = (id, first_name, last_name, email) => {
+  return axios.put(`/address_info/${id}`, { first_name, last_name, email });
+};
+const deleteUser = (id) => {
+  return axios.delete(`/address_info/${id}`);
+};
+
+export { fetchAllUser, postCreateUser, editUser, deleteUser };

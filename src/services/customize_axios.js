@@ -1,7 +1,6 @@
 import axios from "axios";
 const instance = axios.create({
   baseURL: "https://6482dff2f2e76ae1b95ba099.mockapi.io",
-  timeout: 1000,
 });
 
 // Add a response interceptor
