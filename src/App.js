@@ -4,13 +4,10 @@ import TableUsers from "./components/TableUsers";
 function App() {
   return (
     <div className="app-container">
-
       <Header />
       <TableUsers />
-
     </div>
   );
-
 }
 
 export default App;
